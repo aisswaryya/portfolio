@@ -21,19 +21,19 @@ import {
 import { projects } from '../../constants/constants';
 
 const Projects = () => (
-    <Section nopadding id="project">
+    <Section nopadding id="works">
         <SectionDivider />
-        <br />
-        <SectionTitle>Projects</SectionTitle>
+        <SectionTitle main>Works</SectionTitle>
         <GridContainer>
             {projects.map(({ id, image, title, tags, source, visit }) => (
                 <BlogCard key={id}>
                     <Img src={image} />
                     <TitleContent>
-                        <HeaderThree title>{title}</HeaderThree>
+                        <a href={source}>
+                            <HeaderThree title>{title}</HeaderThree>
+                        </a>
                     </TitleContent>
                     <div>
-                        {/* <TitleContent>Stack</TitleContent> */}
                         <TagList>
                             {tags.map((tag, i) => (
                                 <Tag key={i}>{tag}</Tag>

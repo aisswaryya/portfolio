@@ -23,13 +23,12 @@ import {
 
 const Technologies = () => (
     <Section id="tech">
-        <SectionDivider />
-        <br />
+        <SectionDivider divider />
         <SectionTitle>Technologies</SectionTitle>
         <SectionText>
             {' '}
             I've worked with a range of technologies in the web development
-            world.
+            world. From design to back-end.
         </SectionText>
         <List>
             <ListItem>
